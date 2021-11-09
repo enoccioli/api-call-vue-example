@@ -16,7 +16,10 @@
 
     <ul>
       <li v-for="(item, index) in items" v-bind:key="index">
-        {{ item }}
+        <h3>{{ item.title }}</h3>
+        <h4>{{ new Date(item.created_at) }}</h4>
+        <h4>{{ item.author }}</h4>
+        <div>{{ item.story_text }}</div>
       </li>
     </ul>
   </section>
