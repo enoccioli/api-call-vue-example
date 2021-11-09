@@ -9,6 +9,7 @@
     </router-link>
   </section>
 </template>
+
 <script>
 export default {
   name: "Home",

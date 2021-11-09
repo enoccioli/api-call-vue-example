@@ -1,5 +1,6 @@
 {
-  "name": "rts-demo",
+  "name": "api-call-demo",
+  "author": "Elyse Noccioli",
   "version": "0.1.0",
   "private": true,
   "scripts": {

@@ -8,6 +8,8 @@
       <v-btn> History </v-btn>
     </router-link>
 
+    <!-- if this project were more complex, I would probably throw the form and list into their
+        own components -->
     <v-form>
       <v-text-field v-model="search" label="Search Input"></v-text-field>
 
@@ -41,11 +43,10 @@ export default {
     ...mapActions(["getItems"]),
     ...mapMutations(["appendHistory"]),
     async getItemsAction(search) {
-      console.log(search);
       this.appendHistory(search);
       this.loading = true;
       await this.getItems(search);
-      console.log(this.items);
+
       this.loading = false;
     },
   },
